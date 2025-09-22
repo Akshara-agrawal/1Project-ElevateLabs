@@ -1,0 +1,498 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --var: "Domine", serif;
+}
+
+.border{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 21px;
+    font-family: var(--var);
+    height: 2vw;
+    text-align: center;
+    background: linear-gradient(to right,#F96D87,#62BCF1 ,#2267DF );
+}
+
+.head{
+    border-bottom: 1px solid rgb(171, 171, 171);
+}
+
+.nav{
+    margin: 9px;
+    display: flex;
+    gap: 6rem;
+    justify-content: left;
+    align-items: center;
+}
+
+.logo img{
+    margin-left: 5vw;
+    width: 4vw;
+    border-radius: 18rem;
+}
+
+.nav button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.delievery-but{
+    margin-left:27vw;
+    width: 3.5vw;
+}
+
+.cart img{
+    width: 3vw;
+}
+.subs img{
+    width: 3vw;
+}
+
+.fig img{
+    margin-top: 3vw;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    clip-path: polygon()
+
+}
+
+.hero{
+    margin: 4%;
+    /* padding: 5%; */
+}
+
+.text{
+    font-family: var(--var);
+    font-size: 28px;
+    margin-bottom: 3%;
+    display: flex;
+    gap: 4px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+}
+
+.text img{
+    max-width: 2%;
+}
+
+.sunscreen{
+    display: flex;
+    gap: 5%;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.sunscreen::-webkit-scrollbar{
+    display: none;
+    width:0px
+}
+
+
+.sunscreen img{
+    width: 20vw;
+    border-radius: 2%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.sunscreen p{
+    /* border: 2px solid red; */
+    width: 37%;
+    margin: 2% 34%;
+    text-align: center;
+    font-family: var(--var);
+    font-weight: 600;
+    font-size: 18px;
+    animation: tag 3s infinite;
+    cursor: pointer;
+}
+
+@keyframes tag {
+    0%, 50%, 100%{
+        background-color: rgb(216, 0, 0);
+        color: white;
+        opacity: 1;
+    }
+    25%, 75%{
+        opacity: 0.15;
+    }
+}
+
+
+
+.cream1{
+    position: relative;
+    display: inline-block;
+}
+
+.cream1::after{
+    content: "Mango + Detan Gel Sunscreen (Oil Free), SPF 50+ PA+++,All Skin Type";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,26%);
+    color:white;
+    white-space: normal;
+    width: 92%;
+    line-height: 1.4;
+    font-size: 18px;
+    font-family: var(--var);
+    text-align: center;
+    opacity: 0;
+    padding: 10px;
+    transition: opacity 0.4s ease;
+    background:rgba(0,0,0,0.5) ;
+    border-radius: 2%;
+}
+
+.cream1:hover img{
+    opacity: 0.9;
+}
+
+.cream1:hover::after{
+    opacity: 1;
+}
+
+
+.cream2{
+    position: relative;
+    display: inline-block;
+}
+
+.cream2::after{
+    content: "Watermelon Sunscreen, SPF 50+ PA++++";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,70%);
+    color:white;
+    white-space: normal;
+    width: 92%;
+    line-height: 1.4;
+    font-size: 18px;
+    font-family: var(--var);
+    text-align: center;
+    opacity: 0;
+    padding: 10px;
+    transition: opacity 0.4s ease;
+    background:rgba(0,0,0,0.5) ;
+    border-radius: 2%;
+}
+.cream2:hover img{
+    opacity: 0.9;
+}
+
+.cream2:hover::after{
+    opacity: 1;
+}
+
+.cream3{
+    position: relative;
+    display: inline-block;
+}
+.cream3::after{
+    content: "Vitamin C + E Sunscreen, SPF 50+ PA++++";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,70%);
+    color:white;
+    white-space: normal;
+    width: 92%;
+    line-height: 1.4;
+    font-size: 18px;
+    font-family: var(--var);
+    text-align: center;
+    opacity: 0;
+    padding: 10px;
+    transition: opacity 0.4s ease;
+    background:rgba(0,0,0,0.5) ;
+    border-radius: 2%;
+}
+.cream3:hover img{
+    opacity: 0.9;
+}
+
+.cream3:hover::after{
+    opacity: 1;
+}
+.cream4{
+    position: relative;
+    display: inline-block;
+}
+.cream4::after{
+    content: "Strawberry Dew Sunscreen Stick SPF 50+ PA++++";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,70%);
+    color:white;
+    white-space: normal;
+    width: 92%;
+    line-height: 1.4;
+    font-size: 18px;
+    font-family: var(--var);
+    text-align: center;
+    opacity: 0;
+    padding: 10px;
+    transition: opacity 0.4s ease;
+    background:rgba(0,0,0,0.5) ;
+    border-radius: 2%;
+}
+.cream4:hover img{
+    opacity: 0.9;
+}
+
+.cream4:hover::after{
+    opacity: 1;
+}
+.cream5{
+    position: relative;
+    display: inline-block;
+}
+.cream5::after{
+    content: "TBarrier Repair Hydrating Sunscreen SPF 50+ PA++++";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,66%);
+    color:white;
+    white-space: normal;
+    width: 92%;
+    line-height: 1.4;
+    font-size: 18px;
+    font-family: var(--var);
+    text-align: center;
+    opacity: 0;
+    padding: 10px;
+    transition: opacity 0.4s ease;
+    background:rgba(0,0,0,0.5) ;
+    border-radius: 2%;
+}
+
+.cream5:hover img{
+    opacity: 0.9;
+}
+
+.cream5:hover::after{
+    opacity: 1;
+}
+.cream6{
+    position: relative;
+    display: inline-block;
+}
+.cream6::after{
+    content: "Cica + Niacinamide Matte Sunscreen SPF 50+ PA++++";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,70%);
+    color:white;
+    white-space: normal;
+    width: 92%;
+    line-height: 1.4;
+    font-size: 18px;
+    font-family: var(--var);
+    text-align: center;
+    opacity: 0;
+    padding: 10px;
+    transition: opacity 0.4s ease;
+    background:rgba(0,0,0,0.5) ;
+    border-radius: 2%;
+}
+.cream6:hover img{
+    opacity: 0.9;
+}
+
+.cream6:hover::after{
+    opacity: 1;
+}
+.cream7{
+    position: relative;
+    display: inline-block;
+}
+.cream7::after{
+    content: "Strawberry Dew Tinted Sunscreen SPF 50+ PA++++";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,70%);
+    color:white;
+    white-space: normal;
+    width: 92%;
+    line-height: 1.4;
+    font-size: 18px;
+    font-family: var(--var);
+    text-align: center;
+    opacity: 0;
+    padding: 10px;
+    transition: opacity 0.4s ease;
+    background:rgba(0,0,0,0.5) ;
+    border-radius: 2%;
+}
+.cream7:hover img{
+    opacity: 0.9;
+}
+
+.cream7:hover::after{
+    opacity: 1;
+}
+
+footer{
+    background-color: rgb(229, 242, 241);
+    margin-top: 7%;
+    padding: 7%;
+    height: 40vh;
+    font-size: 18px;
+    font-family: var(--var);
+
+}
+
+.foot{    
+    display: flex;
+    gap: 15%;
+}
+
+footer h2{
+    margin-bottom: 15px;
+}
+footer p{
+    padding: 9px;
+    cursor: pointer;
+}
+footer p:hover{
+    color: blue;
+    text-decoration: underline;
+
+}
+.follow a{
+    /* display: flex; */
+    padding: 5px;
+    width: 4vw;
+}
+.copyright p{
+   position: relative;
+   top:8rem;
+   text-align: center;
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 12vw;
+    margin-left: 2vw;
+  }
+  .nav {
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .delievery-but,
+  .cart img,
+  .subs img {
+    width: 8vw;
+    margin-left: 0;
+  }
+  .text {
+    font-size: 18px;
+  }
+  .text img {
+    max-width: 5%;
+  }
+  .sunscreen img {
+    width: 80vw;
+  }
+  .sunscreen p {
+    font-size: 14px;
+    width: auto;
+    margin: 10px auto;
+  }
+  footer {
+    font-size: 14px;
+    padding: 10%;
+    height: auto;
+  }
+  .foot {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .copyright p {
+    top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 8vw;
+    margin-left: 3vw;
+  }
+  .nav {
+    gap: 3rem;
+  }
+  .delievery-but {
+    margin-left: 10vw;
+    width: 6vw;
+  }
+  .cart img,
+  .subs img {
+    width: 6vw;
+  }
+  .text {
+    font-size: 22px;
+  }
+  .sunscreen img {
+    width: 45vw;
+  }
+  .sunscreen p {
+    font-size: 16px;
+    width: auto;
+    margin: 10px auto;
+  }
+  footer {
+    font-size: 16px;
+    padding: 8%;
+  }
+  .foot {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo img {
+    width: 6vw;
+  }
+  .nav {
+    gap: 4rem;
+  }
+  .delievery-but {
+    margin-left: 15vw;
+    width: 5vw;
+  }
+  .cart img,
+  .subs img {
+    width: 5vw;
+  }
+  .text {
+    font-size: 24px;
+  }
+  .sunscreen img {
+    width: 30vw;
+  }
+  .sunscreen p {
+    font-size: 16px;
+  }
+  footer {
+    font-size: 16px;
+    padding: 6%;
+  }
+}
